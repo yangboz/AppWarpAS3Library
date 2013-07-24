@@ -1,8 +1,3 @@
-var GREY:uint = 0x999999;
-var BLACK:uint = 0x000000;
-var WHITE:uint = 0xFFFFFF;
-var RED:uint = 0xDF0101;
-
 package
 {
     import com.shephertz.appwarp.WarpClient;
@@ -20,9 +15,14 @@ package
     import flash.text.TextFormatAlign;
     import flash.ui.Keyboard;
     
-    [SWF(backgroundColor="0xBDBDBD", width="500", height="400",)]
+    [SWF(backgroundColor="0xBDBDBD", width="500", height="400")]
     public class SpriteMoveDemo extends Sprite
     {
+		private static const GREY:uint = 0x999999;
+		private static const BLACK:uint = 0x000000;
+		private static const WHITE:uint = 0xFFFFFF;
+		private static const RED:uint = 0xDF0101;
+		
         private var localPlayer:Sprite;
         private var remotePlayer:Sprite;
         private var localProjectile:Sprite;
